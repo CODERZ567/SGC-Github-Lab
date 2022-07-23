@@ -68,6 +68,11 @@ body {
   outline: 0 !important;
 }
 
+.align-items-center signup{
+  justify-items: center;
+  align-items: center;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
