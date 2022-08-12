@@ -11,7 +11,7 @@ sendMsgBtn.addEventListener("click", function(event) {
         return nameError.innerText = "Please input all necessary information"
     }
     else{
-        document.getElementsByClassName(container).innerText = "";
+        document.getElementsByClassName("container").innerText = "";
         console.log(userName.value)
     }
 
