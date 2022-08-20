@@ -24,6 +24,10 @@ sendMsgBtn.addEventListener("click", function(event) {
         emailError.innerText = "";
         console.log(userEmail.value)
     }
+    if(userName.value && userEmail.value === "") {
+        return nameError.innerText  = "Username is empty."
+        return emailError.innerText = "Email is empty."
+    }
     
     notification.classList.add("show")
     notificationText.innerText = "Your information was sent successfully"
