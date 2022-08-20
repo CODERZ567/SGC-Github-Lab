@@ -5,3 +5,22 @@
 .signup .card{
     width: 500px;
 }
+.error{
+    margin-top: 5px;
+    padding: 0 20px;
+    color: red;
+    border-radius: 10px;
+    background: #fff;
+}
+.notification{
+    background-color: rgb(3, 204, 93);
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    display: none;
+    justify-content: space-between;
+    
+}
+.notification.show{
+    display: flex;
+}

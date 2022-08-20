@@ -4,25 +4,37 @@ const sendMsgBtn = document.getElementById("sendMsgBtn")
 
 sendMsgBtn.addEventListener("click", function(event) {
     event.preventDefault();
-
+    const nameError = document.querySelector("#name-error");
+    const emailError = document.querySelector("#email-error");
+    const notification = document.querySelector(".notification");
+    const notificationText = document.querySelector(".notification-text");
+    
     if(userName.value === "") {
-        const nameError = document.querySelector(".name-error");
-
         return nameError.innerText = "Please input all necessary information"
     }
     else{
-        document.getElementById("container").innerText = "";
+        nameError.innerText = "";
         console.log(userName.value)
     }
-
     if(userEmail.value === "") {
-        const emailError = document.querySelector(".email-error");
 
         return emailError.innerText = "Please input all necessary information"
     }
     else{
+        emailError.innerText = "";
         console.log(userEmail.value)
     }
+    
+    notification.classList.add("show")
+    notificationText.innerText = "Your information was sent successfully"
+    userEmail.value = "";
+    userName.value = "";
 
+    
+})
+
+document.querySelector(".notification-button").addEventListener("click", function(event){
+    const notification = document.querySelector(".notification");
+    notification.classList.remove("show");
 })
 

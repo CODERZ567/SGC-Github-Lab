@@ -67,9 +67,6 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
-.name-error{
-  color: white
-}
 
 .align-items-center signup{
   justify-items: center;
