@@ -17,10 +17,20 @@
     padding: 10px 20px;
     text-align: center;
     color: #fff;
-    display: none;
+    display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 10px;
+    width: 500px;
+
+    transform: translateY(-100px);
+    visibility: hidden;
+    transition: transform .3s ease-in;
     
 }
 .notification.show{
-    display: flex;
+    transform: translateY(0);
+    visibility: visible;
 }
